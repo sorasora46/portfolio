@@ -1,30 +1,40 @@
 export default function Home() {
   return (
     <main className="p-6">
-      <div className="sm:w-full md:w-1/3">
-        <div className="flex flex-col gap-1">
-          <hr />
-          <hr />
-        </div>
+      <div className="md:flex gap-5">
+        <section className="sm:w-full md:w-1/3">
+          <div className="flex flex-col gap-1">
+            <hr />
+            <hr />
+          </div>
 
-        <h1 className="text-2xl my-1 font-bold leading-tight">
-          <span className="whitespace-nowrap">Sorrawit Kwanja</span>
-          <br />
-          <span className="highlight whitespace-nowrap">Fullstack Engineer</span>
-        </h1>
+          <h1 className="text-2xl my-1 font-bold leading-tight">
+            <span className="whitespace-nowrap">Sorrawit Kwanja</span>
+            <br />
+            <span className="highlight whitespace-nowrap">Fullstack Engineer</span>
+          </h1>
 
-        <div className="flex flex-col gap-1">
-          <hr />
-          <hr />
-        </div>
+          <div className="flex flex-col gap-1">
+            <hr />
+            <hr />
+          </div>
 
-        <p className="mt-4 text-lg">
-          Passionate about technology and continuous learning.
-        </p>
+          <p className="mt-4">
+            Passionate about technology and continuous learning.
+          </p>
+        </section>
 
         <br />
 
-        <h2 className="highlight">Tech Stack</h2>
+        <section>
+          <h2 className="highlight text-lg">Projects</h2>
+        </section>
+      </div>
+
+      <br />
+
+      <section className="sm:w-full md:w-1/3">
+        <h2 className="highlight text-lg">Tech Stack</h2>
         <div className="flex gap-2 flex-wrap">
           <div className="chip">
             <span>Java</span>
@@ -63,10 +73,12 @@ export default function Home() {
             <span>Docker</span>
           </div>
         </div>
+      </section>
 
-        <br />
+      <br />
 
-        <h2 className="highlight">Contact</h2>
+      <section className="sm:w-full md:w-1/3">
+        <h2 className="highlight text-lg">Contact</h2>
         <ul>
           <li>
             <a href="mailto:sorrawit.kwanja@gmail.com">sorrawit.kwanja@gmail.com</a>
@@ -90,7 +102,7 @@ export default function Home() {
             </a>
           </li>
         </ul>
-      </div>
+      </section>
     </main>
   );
 }
