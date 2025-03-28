@@ -1,29 +1,31 @@
 export default function Home() {
   return (
-    <main className="p-3">
+    <main className="p-6">
       <div className="sm:w-full md:w-1/3">
         <div className="flex flex-col gap-1">
-          <span aria-hidden="true" className="w-full border-t-2 border-gray-500"></span>
-          <span aria-hidden="true" className="w-full border-t-2 border-gray-500"></span>
+          <hr />
+          <hr />
         </div>
 
-        <h1 className="text-2xl font-bold">
+        <h1 className="text-2xl my-1 font-bold leading-tight">
           <span className="whitespace-nowrap">Sorrawit Kwanja</span>
           <br />
           <span className="highlight whitespace-nowrap">Fullstack Engineer</span>
         </h1>
 
         <div className="flex flex-col gap-1">
-          <span aria-hidden="true" className="w-full border-t-2 border-gray-500"></span>
-          <span aria-hidden="true" className="w-full border-t-2 border-gray-500"></span>
+          <hr />
+          <hr />
         </div>
 
-        <p>Passionate about technology and continuous learning.</p>
+        <p className="mt-4 text-lg">
+          Passionate about technology and continuous learning.
+        </p>
 
         <br />
 
         <h2 className="highlight">Tech Stack</h2>
-        <div className="flex gap-y-2 gap-x-3 flex-wrap">
+        <div className="flex gap-2 flex-wrap">
           <div className="chip">
             <span>Java</span>
           </div>
@@ -66,13 +68,14 @@ export default function Home() {
 
         <h2 className="highlight">Contact</h2>
         <ul>
-          <li>sorrawit.kwanja@gmail.com</li>
+          <li>
+            <a href="mailto:sorrawit.kwanja@gmail.com">sorrawit.kwanja@gmail.com</a>
+          </li>
           <li>
             <a
               href="https://www.linkedin.com/in/sorrawit-kwanja/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500"
             >
               LinkedIn
             </a>
@@ -82,7 +85,6 @@ export default function Home() {
               href="https://github.com/sorasora46/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500"
             >
               GitHub
             </a>
