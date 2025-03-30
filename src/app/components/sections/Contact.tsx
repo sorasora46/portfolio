@@ -12,6 +12,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <i className="devicon-linkedin-plain colored me-1"></i>
             LinkedIn
           </a>
         </li>
@@ -21,6 +22,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <i className="devicon-github-original me-1"></i>
             GitHub
           </a>
         </li>

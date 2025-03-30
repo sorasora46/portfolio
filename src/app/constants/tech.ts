@@ -14,7 +14,7 @@ export enum Tech {
   TENSORFLOW = "TensorFlow",
   WEB_RTC = "WebRTC",
   TAIL_WIND_CSS = "TailwindCSS",
-  FLASK = "Flask"
+  FLASK = "Flask",
 }
 
 export const techs = [
