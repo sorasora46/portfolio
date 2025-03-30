@@ -1,6 +1,6 @@
 import Contact from "./components/sections/Contact";
 import Hero from "./components/sections/Hero";
-import Projects from "./components/sections/Projects";
+import ProjectList from "./components/sections/ProjectList";
 import TechStack from "./components/sections/TechStack";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       </div>
       <br />
       <div className="sm:w-full md:w-2/3">
-        <Projects />
+        <ProjectList />
       </div>
     </main>
   );

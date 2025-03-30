@@ -15,6 +15,16 @@ export enum Tech {
   WEB_RTC = "WebRTC",
   TAIL_WIND_CSS = "TailwindCSS",
   FLASK = "Flask",
+  RUST = "Rust",
+  TOKIO = "Tokio",
+  GIN = "Gin",
+  GO_FIBER = "GoFiber",
+  FLUTTER = "Flutter",
+  FIREBASE = "Firebase",
+  FASTAPI = "FastAPI",
+  SPACY = "Spacy",
+  YOLO_V8 = "YOLOv8",
+  OPEN_CV = "OpenCV",
 }
 
 export const techs = [
