@@ -6,7 +6,7 @@ import TechStack from "./components/sections/TechStack";
 export default function Home() {
   return (
     <main className="p-6 md:flex gap-5">
-      <div className="sm:w-full md:w-1/3">
+      <div className="sm:w-full md:w-1/3 md:sticky top-6 h-max">
         <div>
           <Hero />
           <br />
