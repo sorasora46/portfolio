@@ -27,6 +27,6 @@ export const techIconMapping: { [key in Tech]: JSX.Element } = {
   [Tech.GIN]: <i className="devicon-go-original"></i>, // NO ICON
   [Tech.GO_FIBER]: <i className="devicon-go-original-wordmark colored"></i>, // NO ICON
   [Tech.SPACY]: <i className="devicon-python-plain"></i>, // NO ICON
-  [Tech.YOLO_V8]: <i className="devicon-tensorflow-original"></i>, // NO ICON
+  [Tech.YOLO_V8]: <Image alt="yolov8" width="20" height="20" src="https://cdn.prod.website-files.com/646dd1f1a3703e451ba81ecc/6499468f33db295c5a1219ec_Ultralytics_mark_blue.svg" />, // NO ICON
   [Tech.OPEN_CV]: <Image alt="opencv" width="20" height="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" />,
 };
