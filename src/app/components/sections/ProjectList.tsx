@@ -11,6 +11,7 @@ const ProjectList = () => {
             key={project.title + index}
             title={project.title}
             description={project.description}
+            platforms={project.platforms}
             techs={project.techs}
           />
         })}

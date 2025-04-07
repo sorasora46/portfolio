@@ -1,15 +1,20 @@
 import { Tech } from "./tech";
 
+export type Platform = "mobile" | "web" | "desktop";
+
 export interface ProjectDetail {
   title: string;
   description: string;
+  platforms: Platform[];
   techs?: Tech[];
 }
+
 export const projects: ProjectDetail[] = [
   {
     title: "Stream Blender",
     description:
       "A virtual video switcher platform with a focus on real-time audio and video switching using WebRTC.",
+    platforms: ["web"],
     techs: [Tech.RUST, Tech.TYPESCRIPT, Tech.NODE_JS, Tech.REACT_JS],
   },
   {
@@ -19,6 +24,7 @@ export const projects: ProjectDetail[] = [
       "Developed CRUD and authentication APIs using GoFiber. " +
       "Designed PostgreSQL database tables to efficiently store and manage application data. " +
       "Managed a Docker container and a Dockerfile for backend deployment in VPS.",
+    platforms: ["mobile"],
     techs: [Tech.GO, Tech.FLUTTER, Tech.DOCKER],
   },
   {
@@ -26,6 +32,7 @@ export const projects: ProjectDetail[] = [
     description:
       "Architected and developed a mobile application that allows users to create a group of people to join activities together using Flutter and Firebase. " +
       "Designed Firestore database tables for optimal data storage and retrieval.",
+    platforms: ["mobile"],
     techs: [Tech.FLUTTER, Tech.FIREBASE],
   },
   {
@@ -33,6 +40,7 @@ export const projects: ProjectDetail[] = [
     description:
       "A system to detect guns in a public building using YOLOv8 for object detection. " +
       "Used Roboflow to annotate image data.",
+    platforms: ["desktop"],
     techs: [Tech.PYTHON, Tech.YOLO_V8, Tech.OPEN_CV],
   },
   {
@@ -41,6 +49,7 @@ export const projects: ProjectDetail[] = [
       "Developed a backend service using FastAPI to provide sentiment analysis of tweets from Twitter to the frontend. " +
       "Used Pandas to read CSV files and Spacy to handle text manipulation and Named Entity Recognition (NER). " +
       "Conducted a Proof of Concept of ChatGPT API service and Spacy library to ensure feasibility of the project.",
+    platforms: ["web"],
     techs: [Tech.PYTHON, Tech.FASTAPI],
   },
   {
@@ -48,6 +57,7 @@ export const projects: ProjectDetail[] = [
     description:
       "Developed a system using React.js for the frontend and Flask for backend to detect 50 species of venomous and non-venomous snakes. " +
       "Used YOLOv8 for detection and Roboflow for image annotation.",
+    platforms: ["web"],
     techs: [
       Tech.PYTHON,
       Tech.TYPESCRIPT,
